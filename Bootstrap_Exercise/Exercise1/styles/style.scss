@@ -1,0 +1,13 @@
+.carousel {
+    margin-bottom: 50px;
+    .carousel-item {
+        height: 400px;
+        img {
+            height: 100%;
+            /* Đặt chiều cao của ảnh thành 100% của đối tượng cha */
+            object-fit: cover;
+            /* Đảm bảo ảnh được giữ nguyên tỷ lệ và lấp đầy toàn bộ không gian của phần tử */
+        }
+    }
+    
+} 
