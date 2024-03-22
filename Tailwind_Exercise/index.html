@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="bg-white shadow-lg py-4">
+        <nav class="flex items-center w-5/6 mx-auto justify-between">
+            <div>
+                <img src="./images/Lotus-SOFT.png" alt="" class="w-40">
+            </div>
+            <div id = "navlinks" class="hidden md:block md:static absolute bg-white md:min-h-fit min-h-64 left-96 top-20 md:w-auto w-full px-5 py-5 md:py-0 mr-0">
+                <ul class="flex md:flex-row flex-col md:gap-x-14 md:items-center gap-8">
+                    <li>
+                        <a href="#" class="hover:text-gray-600">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-600">About us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-600">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-600">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="bg-gray-900 text-white px-5 py-2 rounded-full hover:shadow-md hover:bg-gray-800">Sign
+                    in</button>
+                <div id="menu" class="md:hidden">
+                    <i onclick="onToggleMenu()" class="fa-solid fa-bars text-3xl cursor-pointer "></i>
+                </div>
+                <div id="close" class="hidden md:hidden">
+                    <i onclick="onToggleMenu()" class="fa-solid fa-xmark text-3xl cursor-pointer"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="p-5">
+        <h1 class="text-center text-2xl sm:text-3xl lg:text-5xl font-bold mb-2 ">Live anywhere</h1>
+        <h2 class="text-center font-bold text-sm sm:text-xl lg:text-2xl text-gray-700 mb-6">Keep calm & travel on</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-10 max-w-4xl mx-auto">
+            <div>
+                <div class="h-96 mb-5">
+                    <img src=".\images\77b421686d6088e6527cf57d68c69e96.jpg" alt=""
+                        class="h-full w-full rounded-2xl object-cover">
+                </div>
+                <h3 class="text-center font-semibold text-lg">Enjoy the great cold</h3>
+                <span class="block text-center text-gray-600">6,789 properties</span>
+            </div>
+            <div>
+                <div class="h-96 mb-5">
+                    <img src=".\images\Design-builder Shipping Container Homes _ Kubed Living _ United States.jfif"
+                        alt="" class="h-full w-full rounded-2xl object-cover">
+                </div>
+                <h3 class="text-center font-semibold text-lg">Enjoy the great cold</h3>
+                <span class="block text-center text-gray-600">6,789 properties</span>
+            </div>
+            <div>
+                <div class="h-96 mb-5">
+                    <img src=".\images\Trip Recap_ St_ Regis Bora Bora.jfif" alt=""
+                        class="h-full w-full rounded-2xl object-cover">
+                </div>
+                <h3 class="text-center font-semibold text-lg">Enjoy the great cold</h3>
+                <span class="block text-center text-gray-600">6,789 properties</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function onToggleMenu() {
+        var menuIcon = document.getElementById('menu');
+        var closeIcon = document.getElementById('close');
+        // var navLinks = document.querySelector('.nav-links');
+        var navlinks = document.getElementById('navlinks');
+        // Toggle visibility
+        if (menuIcon.classList.contains('hidden')) {
+            menuIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
+            navlinks.classList.add('hidden');
+            
+        } else {
+            menuIcon.classList.add('hidden');
+            closeIcon.classList.remove('hidden');
+            
+            navlinks.classList.toggle('hidden');
+
+        }
+    }
+</script>
+
+</html>
