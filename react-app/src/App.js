@@ -10,6 +10,12 @@ import LifecycleComponent from './Component/Ex_topic8/LifecycleComponenent';
 import { UseEffectPractice } from './Component/Ex_topic9/UseEffectPractice';
 import RichTextMessage from './Component/Ex_topic8/ChildrenProps';
 import Layout from './Component/Ex_topic8/LayoutComponent';
+import UseStatePractice from './Component/Ex_topic9/UseStatePractice';
+import UseRefPractice from './Component/Ex_topic9/UseRefPractice';
+import MemoPractice from './Component/Ex_topic9/MemoPractice';
+import UseMemoPractice from './Component/Ex_topic9/UseMemoPractice';
+import UseCallbackPractice from './Component/Ex_topic9/UseCallbackPractice';
+import BigCircle from './Component/Ex_topic9/CustomHook/BigCircle';
 function App() {
   const items = [
     {
@@ -69,11 +75,18 @@ function App() {
       {/* <RichTextMessage>
         <p className='text-green-700 text-4xl'>Hello Thùy</p>
       </RichTextMessage> */}
-      <Layout 
-      header = {<h1>This is header</h1>}
-      content = {<p>This is content</p>}
-      footer = {<span>This is footer</span>}
-      />
+      {/* <Layout
+        header={<h1>This is header</h1>}
+        content={<p>This is content</p>}
+        footer={<span>This is footer</span>}
+      /> */}
+      {/* <UseStatePractice /> */}
+      {/* <UseRefPractice /> */}
+      
+      {/* <MemoPractice/> */}
+      {/* <UseMemoPractice/> */}
+      {/* <UseCallbackPractice/> */}
+      <BigCircle/>
     </div>
   );
 }
