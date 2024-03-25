@@ -1,0 +1,10 @@
+{"name":"Mango Juice","amount":35,"spend_date":{"$$date":1602806400000},"category":"Food","_id":"0bXXiGLTh78rA9qQ"}
+{"name":"Pizza","amount":80,"spend_date":{"$$date":1602288000000},"category":"Food","_id":"8lrZCE4AyoC8v2Wn"}
+{"name":"Cinema","amount":210,"spend_date":{"$$date":1602806400000},"category":"Entertainment","_id":"A4jvBblgudLrH5b6"}
+{"name":"Mobile","amount":3500,"spend_date":{"$$date":1604275200000},"category":"Gadgets","_id":"DVAoGp5esC44xXbq"}
+{"name":"Java Programming book","amount":242,"spend_date":{"$$date":1602720000000},"category":"Academic","_id":"EnHJBsMm4659DjkR"}
+{"name":"Exam Fees","amount":1245,"spend_date":{"$$date":1604448000000},"category":"Academic ","_id":"R4AnQnEpDSw3ANse"}
+{"name":"Grape Juice","amount":30,"spend_date":{"$$date":1602460800000},"category":"Food","_id":"ROtsD6bgkAwqzgHU"}
+{"name":"Dress","amount":2000,"spend_date":{"$$date":1603584000000},"category":"Cloth","_id":"pm6h0sGIYVcGUHMT"}
+{"name":"Tour","amount":2555,"spend_date":{"$$date":1603929600000},"category":"Entertainment","_id":"wN7q9QhZbQEFaY4a"}
+{"name":"Meals","amount":300,"spend_date":{"$$date":1604016000000},"category":"Food","_id":"yuzo4QM1tnhv5EvL"}
