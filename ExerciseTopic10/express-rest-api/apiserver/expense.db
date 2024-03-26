@@ -1,10 +1,21 @@
-{"name":"Mango Juice","amount":35,"spend_date":{"$$date":1602806400000},"category":"Food","_id":"0bXXiGLTh78rA9qQ"}
 {"name":"Pizza","amount":80,"spend_date":{"$$date":1602288000000},"category":"Food","_id":"8lrZCE4AyoC8v2Wn"}
 {"name":"Cinema","amount":210,"spend_date":{"$$date":1602806400000},"category":"Entertainment","_id":"A4jvBblgudLrH5b6"}
-{"name":"Mobile","amount":3500,"spend_date":{"$$date":1604275200000},"category":"Gadgets","_id":"DVAoGp5esC44xXbq"}
 {"name":"Java Programming book","amount":242,"spend_date":{"$$date":1602720000000},"category":"Academic","_id":"EnHJBsMm4659DjkR"}
 {"name":"Exam Fees","amount":1245,"spend_date":{"$$date":1604448000000},"category":"Academic ","_id":"R4AnQnEpDSw3ANse"}
-{"name":"Grape Juice","amount":30,"spend_date":{"$$date":1602460800000},"category":"Food","_id":"ROtsD6bgkAwqzgHU"}
 {"name":"Dress","amount":2000,"spend_date":{"$$date":1603584000000},"category":"Cloth","_id":"pm6h0sGIYVcGUHMT"}
 {"name":"Tour","amount":2555,"spend_date":{"$$date":1603929600000},"category":"Entertainment","_id":"wN7q9QhZbQEFaY4a"}
 {"name":"Meals","amount":300,"spend_date":{"$$date":1604016000000},"category":"Food","_id":"yuzo4QM1tnhv5EvL"}
+{"name":"Mango Juice","amount":35,"category":"Food","spend_date":{"$$date":1602806400000},"_id":"QLsGGlf8sCFr7Vvr"}
+{"name":"Mango Juice","amount":35,"category":"Food","spend_date":{"$$date":1602806400000},"_id":"Y7xqAB5FZryoyixn"}
+{"name":"Mango Juice","amount":35,"category":"Food","spend_date":{"$$date":1602806400000},"_id":"sFVOqNqQWrCa56ZJ"}
+{"name":"Mango Juice","amount":35,"category":"Food","spend_date":{"$$date":1602806400000},"_id":"LAziSwEP7XH085Ym"}
+{"name":"Mango Juice","amount":35,"category":"Food","spend_date":{"$$date":1602806400000},"_id":"4IYV8eSTRPeL2c2U"}
+{"name":"Mango Juice","amount":35,"category":"Food","spend_date":{"$$date":1602806400000},"_id":"YF1iBq4N1SaQB48Q"}
+{"$$deleted":true,"_id":"sFVOqNqQWrCa56ZJ"}
+{"$$deleted":true,"_id":"YF1iBq4N1SaQB48Q"}
+{"$$deleted":true,"_id":"Y7xqAB5FZryoyixn"}
+{"$$deleted":true,"_id":"QLsGGlf8sCFr7Vvr"}
+{"$$deleted":true,"_id":"LAziSwEP7XH085Ym"}
+{"$$deleted":true,"_id":"4IYV8eSTRPeL2c2U"}
+{"name":"Mango Juice","amount":35,"category":"Food","spend_date":{"$$date":1602806400000},"_id":"7uCLrMUhOCP1I2If"}
+{"$$deleted":true,"_id":"yuzo4QM1tnhv5EvL"}

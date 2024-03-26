@@ -1,10 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+// import ExpenseEntryItemList from './components/FetchAPI/ExpenseEntryItemList';
+// import ExpenseEntryItemList from './components/AxiosAPI_ClassComponent/ExpenseEntryItemList';
+import ExpenseEntryItemList from './components/AxiosAPI_FunctionComponent/ExpenseEntryItemList';
 function App() {
   return (
     <div className="App">
-      <div className="text-center text-green-800"> text</div>
+      <ExpenseEntryItemList/>
     </div>
   );
 }
