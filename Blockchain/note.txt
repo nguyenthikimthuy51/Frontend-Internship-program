@@ -1,0 +1,55 @@
+-Block chain là một cơ sở dữ liệu phân cấp lưu trữ thông tin trong các khối thông tin được liên kết với nhau bằng mã hóa
+-Ethereum: là thành phần chạy trên blockchain, EVM(Ethereum virtual machine) xử lý các smart contract
+-Smart contract là các app nhỏ, chạy trên nền tảng Ethereum
+-Cryptographic hash: là một fingerprint, dùng để xác định một giao dịch
+-Địa chỉ ví được sinh ra và quản lý bởi bên thứ 3 (blockchain) không quản lý
+-Transactions: action thực hiện bởi một externally-owned account gửi lên blockchain network, từ đó thay đổi state của network:
+    - Gửi nhận data -> làm thay đổi data
+    - Deploy smart contract lên blockchain
+    - Gọi hàm làm thay đổi data
+Một chiếc transaction được gửi đi sẽ có những data sau:
+- to: người nhận, có thể bạn gửi tiền cho một address khác, có thể bạn execute một smart contract khác. Hoặc không có thì khả năng cao transaction này dùng để tạo một smart contract
+signature chữ kí, cái này để biết chính xác thằng nào là thằng gửi cái transaction này đi
+- value: native token gửi trong transaction đó (ETH, BNB, MATIC,…)
+- data (optional): dùng làm input để execute một smart contract
+- gasLimit: Gas (dùng để tính computational effort trong blockchain) tối đa được sử dụng để chạy transaction này.
+- maxPriorityFeePerGas: là dùng để tip cho thằng validator nào pick cái transaction này mà chạy
+vd:
+{
+  from: "0xEA674fdDe714fd979de3EdF0F56AA9716B898ec8",
+  to: "0xac03bb73b6a9e108530aff4df5077c2b3d481e5a",
+  gasLimit: "21000",
+  maxFeePerGas: "300",
+  maxPriorityFeePerGas: "10",
+  nonce: "0",
+  value: "10000000000"
+}
+- Solidity là một ngôn ngữ lập trình để tạo nên các smart contract (hợp đồng thông minh) trên nền tảng Ethereum
+- ERC-20: Token có thể thay thế, Có 9 quy tắc theo tiêu chuẩn ERC-20:
+  - 3 quy tắc tùy chọn: Tên token, ký hiệu, số thập phân
+  - 6 quy tắc bắt buộc: Total supply, balance of, transfer, transfer from, approve, allowance.
+- Các function của ERC20:
+  - function allowance(address _owner, address _spender) constant returns (uint remaining);
+    ->hàm allowance sẽ giúp hoàn lại số tiền còn lại có thể rút
+  - function approve(address _spender, uint _value) returns (bool success);
+    ->giới hạn số lượng token mà một smart contract có thể rút từ balance
+  - function balanceOf(address _owner) constant returns (uint balance);
+    -> tra cứu balance của các address khác, return 
+  - function totalSupply() constant returns (uint totalSupply);
+    ->trả về tổng số lượng token được phát hành
+  - function transfer(address _to, uint _value) returns (bool success);
+    ->gửi token ERC20 từ một ví duy nhất do người dùng sở hữu đến một địa chỉ ví khác
+  - function transferFrom(address _from, address _to, uint _value) returns (bool success);
+    ->ủy quyền cho ai đó hoặc contract khác để chuyển tiền thay cho mình
+- ERC-721: là tiêu chuẩn của token không thể thay thế (Non-Fungible Token (NFT) là một loại token đại diện cho một tài sản duy nhất)
+-
+tạo ví metamask
+deploy: https://remix.ethereum.org/#lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.25+commit.b61c2a91.js
+chainlist -> import mạng: https://chainlist.org/chain/11155111
+faucet sepolia ETH: https://www.alchemy.com/faucets/ethereum-sepolia
+ETH với các token khác khác nhau ntn (ERC20,ERC721)
+có adress, ABI để tương tác với contract
+https://sepolia.etherscan.io/
+
+- Đào tiền: https://sepolia-faucet.pk910.de/#/mine/096f5be5-f535-4e99-a5a9-7ee8f596c350
+- Key: https://app.infura.io/key/bbdc77ca5ef94854891d4a44db255d11/all-endpoints

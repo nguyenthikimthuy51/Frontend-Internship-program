@@ -1,0 +1,9 @@
+install: npm install swr
+
+Chức năng: 
+- dùng để fetch data
+- fetch data lại sau một khoảng thời gian nhất định: refreshInterval
+- cập nhật lại dữ liệu một cách chính xác khi bạn focus vào một trang hoặc chuyển qua lại giữa các tab: revalidateOnFocus
+- dữ liệu sẽ được cập nhật lại khi mạng được connect thành công: revalidateOnReconnect
+- tìm dữ liệu phụ thuộc vào một dữ liệu khác (get id của một user sau đó dựa vào userId ấy để tìm ra các project tương ứng của user)
+- loại bỏ những request trong một khoảng thời gian nhất định với cùng 1 api: dedupingInterval 
