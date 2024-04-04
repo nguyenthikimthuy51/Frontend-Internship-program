@@ -1,7 +1,8 @@
 
 import './App.css';
-import Web3ReactExample from './web3React/Web3ReactExample';
-import EtherExample from './web3React/EthersExample';
+import Web3ReactExample from './components/Web3ReactExample';
+import EtherExample from './components/EthersExample';
+import ReadEvent from './components/ReadEvent';
 
 function App() {
 
@@ -9,7 +10,8 @@ function App() {
     <div className="App">
 
       {/* <Web3ReactExample/> */}
-      <EtherExample/>
+      {/* <EtherExample/> */}
+      <ReadEvent/>
     </div>
   );
 }

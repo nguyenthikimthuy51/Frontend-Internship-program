@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: rgb(47, 47, 241);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 40px;
+    margin-top: 50px;
+}

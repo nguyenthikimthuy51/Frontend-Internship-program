@@ -1,6 +1,7 @@
 import { ethers } from 'ethers';
 import abi from '../ABI.json'
 
+
 function EtherExample() {
     const contractAddress = '0xa040F42997720c67F8998082E7B45405D108e513';
     const provider = new ethers.providers.Web3Provider(window.ethereum);
