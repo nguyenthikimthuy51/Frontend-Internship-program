@@ -10,8 +10,8 @@ function App() {
     <div className="App">
 
       {/* <Web3ReactExample/> */}
-      {/* <EtherExample/> */}
-      <ReadEvent/>
+      <EtherExample/>
+      {/* <ReadEvent/> */}
     </div>
   );
 }
